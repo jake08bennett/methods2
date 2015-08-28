@@ -1,7 +1,17 @@
 module Methods2
 	
 	# TODO - write elevenish?
-	
+	def elevenish(num)
+		divided = num % 11
+		if divided == 1 
+			return true
+		elsif divided == 0
+			return true
+		else 
+			return false
+		end
+	end
+
 	# TODO - write ice_cream_party?
 	
 	# TODO - write successful_squirrel_party?
@@ -19,5 +29,4 @@ module Methods2
 	# TODO - write rotate_left
 
 	# TODO - write double23?
-
 end
