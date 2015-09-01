@@ -53,5 +53,21 @@ class Methods2Test < MiniTest::Test
 		assert_equal false, @m.less_by_ten?(9, 18, 10)
 	end
 
+	def test_fizz_string
+		assert_equal "Fizz", @m.fizz_string("Firetruck")
+		assert_equal "Buzz", @m.fizz_string("Balogna")
+		assert_equal "FizzBuzz", @m.fizz_string("Fire Bib")
+	end
+
+	def test_first_last_six?
+		assert_equal true, @m.first_last_six?([7, 8, 4, 3, 6])
+		assert_equal false, @m.first_last_six?([8, 14, 78, 34])
+		assert_equal true, @m.first_last_six?([6, 5, 91, 46])
+		assert_equal false, @m.first_last_six?([4, 6, 8, 90])
+	end
+
+
+
+
 
 end

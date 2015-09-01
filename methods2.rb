@@ -78,7 +78,31 @@ module Methods2
 	
 	# TODO - write fizz_string
 
+	def fizz_string(str)
+		if str.start_with?("F") || str.start_with?("F")
+			if str.end_with?("B") || str.end_with?("b")
+				return "FizzBuzz"
+			else
+				return "Fizz"
+			end
+		elsif str.start_with?("B") || str.start_with?("b")
+			return "Buzz"
+		end
+	end
+
+
+
+
+
 	# TODO - write first_last_six?
+	def first_last_six?(arr)
+		if arr[0] == 6 || arr[-1] == 6
+			return true
+		else
+			return false
+		end
+	end
+
 
 	# TODO - write rotate_left
 
